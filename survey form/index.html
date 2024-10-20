@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html>
+<head>
+   <title>Survey Form</title>
+  <link rel="stylesheet" href-"styles.css">
+  <h1 id="title">Kindergarten</h1>
+  <p id="description">Thank you for giving your time to us</p>
+
+</head>
+
+  <style>
+    body {
+      
+      background-image: url('https://i.pinimg.com/564x/c7/4a/06/c74a06d3c5dfc9a319150b81b473b77f.jpg');
+      background-size: cover;
+    }
+     .container {
+      max-width: 600px;
+      margin: 0 auto;
+      padding: 20px;
+      border: 1px solid #ccc;
+      border-radius: 5px;
+      background-color: rgba(255, 255, 255, 0.7);
+    }
+    label {
+      display: block;
+      margin-bottom: 10px;
+    }
+    input[type="text"],
+    input[type="email"],
+    select,
+    textarea {
+      width: 100%;
+      padding: 10px;
+      margin-bottom: 20px;
+      border: 1px solid #ccc;
+      border-radius: 5px;
+    }
+    textarea {
+      resize: vertical;
+    }
+    input[type="submit"] {
+      background-color: #4CAF50;
+      color: #fff;
+      padding: 10px 20px;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+    }
+    input[type="submit"]:hover {
+      background-color: #45a049;
+    }
+  </style>
+</head>
+<body>
+  <h1 id="title">Survey Form</h1>
+  <p id="description">Please take a moment to fill out our survey form.</p>
+  
+  <form id="survey-form">
+    <label for="name" id="name-label">Student's Name:</label>
+    <input type="text" id="name" name="name" required placeholder="Enter your name">
+
+    <label for="name" id="name-label">Guardian Name:</label>
+    <input type="text" id="name" name="name" required placeholder="Enter your Guardian Name">
+
+    <label for="email" id="email-label">Email:</label>
+    <input type="email" id="email" name="email" required placeholder="Enter your email">
+
+    <label for="number" id="number-label">Child's Age:</label>
+    <input type="number" id="number" name="age" required placeholder="Enter your age" min="1" max="8">
+
+    <label for="dropdown">Class:</label>
+    <select id="dropdown" name="option">
+      <option value="">Select Class</option>
+      <option value="U.K.G">U.K.G</option>
+        <option value="L.K.G">L.K.G</option>
+        <option value="Nursery">Nursery</option>
+        <option value="Pre-Nursery">Pre-Nursery</option>
+    </select>
+
+    <p>Satisfied with Kindergarten service?</p>
+    <label>
+      <input type="radio" name="radio-option" value="option1">
+      Yes
+    </label>
+    <label>
+      <input type="radio" name="radio-option" value="option2">
+      No
+    </label>
+    <p>My Child loves:</p>
+    <label>
+      <input type="checkbox" name="checkbox-option" value="Talking">
+      Talking
+    </label>
+    <label>
+      <input type="checkbox" name="checkbox-option" value="Colorin">
+      Coloring
+    </label>
+    <label>
+      <input type="checkbox" name="checkbox-option" value="Playing">
+      Playing
+    </label>
+    <input type="checkbox" name="checkbox-option" value="Studing...">
+      Studing...
+    </label>
+
+
+    
+
+    <label for="feedback">Feedback:</label>
+    <textarea id="feedback" name="feedback" rows="4" cols="50" placeholder="Enter your feedback"></textarea>
+      <head>
+  <title>5-Star Rating System</title>
+  <style>
+    .rating {
+      unicode-bidi: bidi-override;
+      direction: rtl;
+      text-align: center;
+    }
+    .rating > span {
+      display: inline-block;
+      position: relative;
+      width: 1.1em;
+      font-size: 24px;
+      color: #ffcc00;
+    }
+    .rating > span:hover:before,
+    .rating > span:hover ~ span:before {
+      content: "\2605";
+      position: absolute;
+      left: 0;
+      color: #ffa500;
+    }
+  </style>
+</head>
+<body>
+  
+  <div class="rating">
+    <span>&#9733;</span>
+    <span>&#9733;</span>
+    <span>&#9733;</span>
+    <span>&#9733;</span>
+    <span>&#9733;</span>
+  </div>
+</body>
+<p id="description">Thank you, Your feedback mean alot to us</p>
+
+    <input type="submit" id="submit" value="Submit">
+  </form>
+
+</body>
+</html>
